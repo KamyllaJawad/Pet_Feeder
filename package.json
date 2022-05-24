@@ -1,0 +1,25 @@
+{
+  "name": "Pet_Feeder",
+  "version": "1.0.0",
+  "description": "Trabalho academico - Internet das Coisas. \r Matéria ministrada por Luiz Carlos Camargo na Católica de Santa Catarina.  \r Equipe: Pedro Tamanini e Ruan Hoffman",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamyllaJawad/Pet_Feeder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KamyllaJawad/Pet_Feeder/issues"
+  },
+  "homepage": "https://github.com/KamyllaJawad/Pet_Feeder#readme",
+  "dependencies": {
+    "debug": "^4.3.4",
+    "express": "^4.18.1",
+    "http": "0.0.1-security"
+  }
+}
