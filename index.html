@@ -86,7 +86,8 @@
     
       <main>
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <!--Comida-->
+
+          <!--Status atual do comedouro-->
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-header py-3">
@@ -102,23 +103,9 @@
               </div>
             </div>
           </div>
-          <!--Água
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Nome do Pet</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title">Água</h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Última vez aberto:</li>
-                  <li>litros de água:</li>
-                </ul>
-                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Abrir agora</button>
-              </div>
-            </div>
-          </div>-->
-          <!--Forçar o fechamento-->
+
+          <!--Forçar fechamento do comedouro-->
+
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
               <div class="card-header py-3">
@@ -134,9 +121,13 @@
             </div>
           </div>
         </div>
+
         <!--Manutenção de automatização-->
+
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-            <!--Comida-->
+
+            <!--Definição Manual de Comida-->
+
             <div class="col">
               <div class="card mb-4 rounded-3 shadow-sm">
                 <div class="card-header py-3">
@@ -145,30 +136,34 @@
                 <div class="card-body">
                   <h1 class="card-title">Comida</h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>A cada quanto tempo (min): ____</li>
-                    <li>Gramas de ração:______</li>
+
+                    <!--Inicio do formulário-->
+
+                    <form action="post">
+                    <li>A cada quanto tempo:</li>
+                    <div class="input-group input-group-sm mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Minutos:</span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
+                    <li>Gramas de ração:</li>
+                    <div class="input-group input-group-sm mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-sm">Gramas</span>
+                      </div>
+                      <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                    </div>
                   </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-outline-primary">Definir agora</button>
+                  <button type="submit" class="w-100 btn btn-lg btn-outline-primary">Definir agora</button>
+                </form>
+                <!--Fim do formulário-->
+
                 </div>
               </div>
             </div>
-            <!--Água
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                      <h4 class="my-0 fw-normal">Automatizar Tempo e Grama</h4>
-                    </div>
-                    <div class="card-body">
-                      <h1 class="card-title">Água</h1>
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li>A cada quanto tempo (min):</li>
-                        <li>Mililitros de água:</li>
-                      </ul>
-                      <button type="button" class="w-100 btn btn-lg btn-outline-primary">Definir agora</button>
-                    </div>
-                  </div>
-            </div>-->
-            <!--Forçar o fechamento-->
+
+            <!--Automatização padrão do ESP32-->
             <div class="col">
               <div class="card mb-4 rounded-3 shadow-sm">
                 <div class="card-header py-3">
@@ -180,7 +175,7 @@
                     <li>Utilize essa função para deixar a função padrão automatica do comedouro</li>
                   </ul>
                   <button type="button" class="w-100 btn btn-lg btn-outline-primary">Definir agora</button>
-                </div>
+                </div> 
               </div>
             </div>
           </div>
